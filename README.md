@@ -2,7 +2,7 @@
 
 There are a lot of Jovo examples around but I did not find any project template that served my use case: this is why I collected pieces and examples on the web, Slack channels, forums, docs and what I learned from personal communication (especially thanks for that!). I used the results to prepare this template project which hopefully serves a lot of users to find their way into Jovo.  
 
-This Jovo V4 example project includes the following features:
+This Jovo V4 example project includes the following **features**:
 
 - Configuration prepared for stages **PROD** and **DEV**
   (including **different product and invocation names** for PROD and DEV for **easier testing and maintenance** )
