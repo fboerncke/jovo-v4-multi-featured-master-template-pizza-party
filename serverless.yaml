@@ -1,0 +1,31 @@
+"service": "jovo-sample"
+"frameworkVersion": "3"
+"package":
+  "artifact": "./bundle.zip"
+"provider":
+  "name": "aws"
+  "runtime": "nodejs14.x"
+  "iam":
+    "role":
+      "statements":
+        - "Effect": "Allow"
+          "Action":
+            - "dynamodb:CreateTable"
+            - "dynamodb:DescribeTable"
+            - "dynamodb:Query"
+            - "dynamodb:Scan"
+            - "dynamodb:GetItem"
+            - "dynamodb:PutItem"
+            - "dynamodb:UpdateItem"
+            - "dynamodb:DeleteItem"
+          "Resource": "arn:aws:dynamodb:*:*:table/*"
+  "stage": "prod"
+  "environment":
+    "DYNAMODB_TABLE_NAME": "jovo-sample-db"
+"functions":
+  "handler":
+    "handler": "index.handler"
+    "url": true
+    "timeout": 7
+    "events":
+      - "alexaSkill": "****"

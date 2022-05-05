@@ -1,0 +1,28 @@
+{
+  "translation": {
+    "welcome": "Welcome to Pizza Party!",
+
+    "introQuestion": "Here is a question: ",
+    
+    "pizzaPrompt": "Do you like to try a pizza? ",
+    "pizzaYes": "Fine. Here is a very hot Pepperoni Pizza. ",
+    "pizzaNotSure": "Fine with me. I will bring you a salad instead. ",
+    "pizzaNo": "No problem. Not everybody likes pizza. ",
+
+    "drinkPrompt": "Do you like to try a drink? ",
+    "drinkYes": "Here you are. But watch out if you need to drive home by car. ",
+    "drinkNotSure": "Allright. I will bring you a milk shake instead. ",
+    "drinkNo": "Fine, not everybody likes a drink. ",
+
+    "iceCreamPrompt": "How about ice cream? ",
+    "iceCreamYes": "Fine, here I have Straciatella for you. ",
+    "iceCreamNotSure": "You can decide later. ",
+    "iceCreamNo": "Makes sense if you want to loose weight. ",
+
+    "helpMessage": "Please answer the following question with either 'yes', 'no' or 'perhaps': ",
+
+    "goodByeMessage": "Good bye!",
+
+    "outputTemplateArray": ["Yes", "No", "Perhaps", "Again", "Help"]
+  }
+}

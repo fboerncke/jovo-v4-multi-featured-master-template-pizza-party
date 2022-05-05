@@ -1,0 +1,68 @@
+{
+  "invocation": {
+    "alexa": "pizza party",
+    "googleAssistant": "pizza party"
+  },
+  "version": "4.0",
+  "intents": {
+    "YesIntent": {
+      "alexa": {
+        "name": "AMAZON.YesIntent"
+      },
+      "phrases": ["yes", "yes please", "sure"]
+    },
+    "NotSureIntent": {
+      "phrases": ["maybe", "perhaps", "not sure"]
+    },
+    "NoIntent": {
+      "alexa": {
+        "name": "AMAZON.NoIntent"
+      },
+      "phrases": ["no", "no thanks"]
+    },
+    "RepeatIntent": {
+      "alexa": {
+        "name": "AMAZON.RepeatIntent"
+      },
+      "phrases": ["repeat", "could you repeat that", "what", "say that again"]
+    },
+    "StopIntent": {
+      "alexa": {
+        "name": "AMAZON.StopIntent"
+      },
+      "dialogflow": {
+        "events": [
+          {
+            "name": "actions_intent_CANCEL"
+          }
+        ]
+      },
+      "phrases": ["Stop"]
+    },
+    "CancelIntent": {
+      "alexa": {
+        "name": "AMAZON.CancelIntent"
+      },
+      "phrases": ["Cancel", "never mind", "forget it"]
+    },
+    "HelpIntent": {
+      "alexa": {
+        "name": "AMAZON.HelpIntent"
+      },
+      "phrases": ["Help", "What now", "What can I do"]
+    },
+    "StartOverIntent": {
+      "alexa": {
+        "name": "AMAZON.StartOverIntent"
+      },
+      "phrases": ["restart", "start over", "start again"]
+    }
+  },
+  "alexa": {
+    "interactionModel": {
+      "languageModel": {
+        "intents": []
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "APL",
+  "version": "1.9",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.5.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": ["headlineData"],
+    "item": {
+      "type": "AlexaHeadline",
+      "primaryText": "${headlineData.primaryText}",
+      "secondaryText": "${headlineData.secondaryText}",
+      "backgroundColor": "@colorRed800",
+      "footerHintText": "${headlineData.footerHintText}",
+      "headerAttributionImage": "${headlineData.headerAttributionImage}",
+      "headerBackButton": true,
+      "headerBackButtonAccessibilityLabel": "back",
+      "headerDivider": false,
+      "headerSubtitle": "${headlineData.headerSubtitle}",
+      "headerTitle": "${headlineData.headerTitle}"
+    }
+  }
+}

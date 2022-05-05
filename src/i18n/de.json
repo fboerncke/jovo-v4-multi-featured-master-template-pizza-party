@@ -1,0 +1,28 @@
+{
+  "translation": {
+    "welcome": "Willkommen bei meiner Pizza Party!",
+
+    "introQuestion": "Hier ist eine Frage: ",
+
+    "pizzaPrompt": "Magst Du eine Pizza probieren?",
+    "pizzaYes": "Gerne. Hier ist eine sehr heiße Pepperoni Pizza. ",
+    "pizzaNotSure": "Muss ja nicht sein. Ich bringe Dir stattdessen einen Salat. ",
+    "pizzaNo": "Kein Thema. Nicht jeder mag Pizza. ",
+
+    "drinkPrompt": "Magst Du einen Drink probieren? ",
+    "drinkYes": "Bitteschön. Aber sei vorsichtig, wenn Du später noch Auto fahren musst. ",
+    "drinkNotSure": "Das ist in Ordnung. Ich bringe Dir einen Milchshake. ",
+    "drinkNo": "In Ordnung, Du kannst auch später nach dem Essen noch etwas trinken. ",
+
+    "iceCreamPrompt": "Magst Du ein leckeres Eis probieren? ",
+    "iceCreamYes": "Gerne. Ich bringe Dir ein Straciatella-Eis. ",
+    "iceCreamNotSure": "Muss ja nicht sein. Vielleicht später. ",
+    "iceCreamNo": "Das ist vernünftig und spart Kalorien. ",
+
+    "helpMessage": "Bitte antworte auf die folgende Frage entweder mit 'ja', 'nein' oder 'vielleicht': ",
+
+    "goodByeMessage": "Auf Wiedersehen!",
+
+    "outputTemplateArray": ["Ja", "Nein", "Vielleicht", "Nochmal", "Hilfe"]
+  }
+}
