@@ -2,6 +2,8 @@
 
 There are a lot of Jovo examples around but I did not find any project template that served my use case: this is why I collected pieces and examples on the web, Slack channels, forums, docs and what I learned from personal communication (especially thanks for that!). I used the results to prepare this template project which hopefully serves a lot of users to find their way into Jovo.  
 
+![Pizza Party Jovo Example Project Template](https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/blob/main/resources/images/pizza-party-01.png "Pizza Party Jovo Example Project Template")
+
 This Jovo V4 example project includes the following **features**:
 
 - Configuration prepared for stages **PROD** and **DEV**
@@ -17,12 +19,14 @@ This Jovo V4 example project includes the following **features**:
 - Prepared examples how to define and **run locale specific test cases** using jest for some basic intents (run npm test)
 - **Bonus Time Saver**: how to maintain all those necessary entries for the Amazon/Google marketplaces from file while avoiding duplicate maintenance.
 
-Nice: **The generated code artifacts validate within Developer/Google Console**, so the results are technically ready for deployment: *more time for you to focus on your use case!*
+Nice: **The generated code artifacts validate within Developer/Google Console**, so the results are technically ready for deployment: this means *more time for you to focus on your use case!*
 
 For sure there is a lot to improve.
 Let me know what you think.
 Comments welcome!
 
 frank.boerncke@gmail.com
+
+![Pizza Party Jovo Example Project Template - Good Bye Page](https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/blob/main/resources/images/pizza-party-02.png "Pizza Party Jovo Example Project Template - Good Bye Page")
 
 
