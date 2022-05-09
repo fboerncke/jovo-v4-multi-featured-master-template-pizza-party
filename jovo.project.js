@@ -127,10 +127,10 @@ const project = new ProjectConfig({
       endpoint: '${JOVO_WEBHOOK_URL}',
 
       languageModel: {
-        en: {
+        de: {
           invocation: INVOCATION_NAME_DE.toLowerCase() + ' test',
         },
-        de: {
+        en: {
           invocation: INVOCATION_NAME_EN.toLowerCase() + ' test',
         },
       },
@@ -160,6 +160,7 @@ const project = new ProjectConfig({
                   },
                   isAvailableWorldwide: true,
                   testingInstructions: 'handle with care',
+                  // https://developer.amazon.com/en-US/docs/alexa/smapi/skill-manifest.html
                   category: 'EDUCATION_AND_REFERENCE',
                   distributionMode: 'PUBLIC',
                   distributionCountries: [],
@@ -277,6 +278,7 @@ const project = new ProjectConfig({
                   },
                   isAvailableWorldwide: true,
                   testingInstructions: 'handle with care',
+                  // https://developer.amazon.com/en-US/docs/alexa/smapi/skill-manifest.html
                   category: 'EDUCATION_AND_REFERENCE',
                   distributionMode: 'PUBLIC',
                   distributionCountries: [],
