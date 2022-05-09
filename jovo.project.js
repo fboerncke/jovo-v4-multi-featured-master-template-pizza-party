@@ -160,7 +160,7 @@ const project = new ProjectConfig({
                   },
                   isAvailableWorldwide: true,
                   testingInstructions: 'handle with care',
-                  // https://developer.amazon.com/en-US/docs/alexa/smapi/skill-manifest.html
+                  // https://developer.amazon.com/en-US/docs/alexa/smapi/skill-manifest.html#category-enum
                   category: 'EDUCATION_AND_REFERENCE',
                   distributionMode: 'PUBLIC',
                   distributionCountries: [],
@@ -278,7 +278,7 @@ const project = new ProjectConfig({
                   },
                   isAvailableWorldwide: true,
                   testingInstructions: 'handle with care',
-                  // https://developer.amazon.com/en-US/docs/alexa/smapi/skill-manifest.html
+                  // https://developer.amazon.com/en-US/docs/alexa/smapi/skill-manifest.html#category-enum
                   category: 'EDUCATION_AND_REFERENCE',
                   distributionMode: 'PUBLIC',
                   distributionCountries: [],
