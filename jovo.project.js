@@ -3,9 +3,10 @@ const { GoogleAssistantCli } = require('@jovotech/platform-googleassistant');
 const { AlexaCli } = require('@jovotech/platform-alexa');
 const { ServerlessCli } = require('@jovotech/target-serverless');
 
-// This name will appear in the Alexa and Actions on Google consoles
+// https://developer.amazon.com/en-US/docs/alexa/custom-skills/choose-the-invocation-name-for-a-custom-skill.html
 const INVOCATION_NAME_ALEXA_DE = 'Pizza Party';
 const INVOCATION_NAME_ALEXA_EN = 'Pizza Party';
+// https://developers.google.com/assistant/console/policies/general-policies#name_requirements
 const INVOCATION_NAME_GOOGLE_ASSISTANT_DE = 'Pizza Party';
 const INVOCATION_NAME_GOOGLE_ASSISTANT_EN = 'Pizza Party';
 
@@ -51,7 +52,7 @@ let GOOGLE_ASSISTANT_PUBLISHING_INFORMATION_DE = (suffix) => ({
     pronunciation: `${INVOCATION_NAME_GOOGLE_ASSISTANT_DE} ` + suffix,
     smallLogoImage: '$resources.images.logo',
     termsOfServiceUrl: 'https://www.applicate.de',
-    sampleInvocations: ['Sprich mit ' + `${INVOCATION_NAME_ALEXA_DE} ` + suffix],
+    sampleInvocations: ['Sprich mit ' + `${INVOCATION_NAME_GOOGLE_ASSISTANT_DE} ` + suffix],
   },
   // https://developers.google.com/assistant/actionssdk/reference/rest/Shared.Types/Category
   category: 'EDUCATION_AND_REFERENCE',
@@ -69,7 +70,7 @@ let GOOGLE_ASSISTANT_PUBLISHING_INFORMATION_EN = (suffix) => ({
     pronunciation: `${INVOCATION_NAME_GOOGLE_ASSISTANT_EN} ` + suffix,
     smallLogoImage: '$resources.images.logo',
     termsOfServiceUrl: 'https://www.applicate.de',
-    sampleInvocations: ['Talk to ' + `${INVOCATION_NAME_ALEXA_EN} ` + suffix],
+    sampleInvocations: ['Talk to ' + `${INVOCATION_NAME_GOOGLE_ASSISTANT_EN} ` + suffix],
   },
 });
 
