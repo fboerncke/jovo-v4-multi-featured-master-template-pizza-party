@@ -4,49 +4,54 @@ const { AlexaCli } = require('@jovotech/platform-alexa');
 const { ServerlessCli } = require('@jovotech/target-serverless');
 
 // This name will appear in the Alexa and Actions on Google consoles
-const INVOCATION_NAME_DE = 'Pizza Party';
-const INVOCATION_NAME_EN = 'Pizza Party';
+const INVOCATION_NAME_ALEXA_DE = 'Pizza Party';
+const INVOCATION_NAME_ALEXA_EN = 'Pizza Party';
+const INVOCATION_NAME_GOOGLE_ASSISTANT_DE = 'Pizza Party';
+const INVOCATION_NAME_GOOGLE_ASSISTANT_EN = 'Pizza Party';
 
 let ALEXA_PUBLISHING_INFORMATION_DE = (suffix) => ({
-  summary: 'Kurze Zusammenfassung',
   examplePhrases: [
-    'Alexa, öffne ' + INVOCATION_NAME_DE,
-    'Alexa, starte ' + INVOCATION_NAME_DE,
-    'Alexa, frage ' + INVOCATION_NAME_DE + ' nach Hilfe',
+    'Alexa, öffne ' + INVOCATION_NAME_ALEXA_DE,
+    'Alexa, starte ' + INVOCATION_NAME_ALEXA_DE,
+    'Alexa, frage ' + INVOCATION_NAME_ALEXA_DE + ' nach Hilfe',
   ],
-  keywords: ['einige', 'tolle', 'stichworte'],
   name: 'Pizza Party - Jovo Template Projekt ' + suffix,
-  description: 'Dies ist ein Beschreibungstext',
+  summary: 'Kurze Zusammenfassung',
+  description:
+    'Dies ist ein Beschreibungstext - Schicke frank.boerncke@gmail.com eine Mail und erzähle ihm, was Du mit diesem Template gemacht hast. ',
+  keywords: ['einige', 'tolle', 'tags'],
   smallIconUri: 'https://via.placeholder.com/108/09f/09f.png',
   largeIconUri: 'https://via.placeholder.com/512/09f/09f.png',
 });
 
 let ALEXA_PUBLISHING_INFORMATION_EN = (suffix) => ({
-  summary: 'Some summary text.',
   examplePhrases: [
-    'Alexa, open ' + INVOCATION_NAME_EN,
-    'Alexa, launch ' + INVOCATION_NAME_EN,
-    'Alexa, ask ' + INVOCATION_NAME_EN + ' for help',
+    'Alexa, open ' + INVOCATION_NAME_ALEXA_EN,
+    'Alexa, launch ' + INVOCATION_NAME_ALEXA_EN,
+    'Alexa, ask ' + INVOCATION_NAME_ALEXA_EN + ' for help',
   ],
-  keywords: ['some', 'cool', 'keywords'],
   name: 'Pizza Party - Jovo Template Project ' + suffix,
-  description: 'Some description text',
+  summary: 'Some short summary text.',
+  description:
+    'Some description text - Send an email to frank.boernke@gmail.com and tell him what you built using this template. ',
+  keywords: ['some', 'cool', 'keywords'],
   smallIconUri: 'https://via.placeholder.com/108/09f/09f.png',
   largeIconUri: 'https://via.placeholder.com/512/09f/09f.png',
 });
 
 let GOOGLE_ASSISTANT_PUBLISHING_INFORMATION_DE = (suffix) => ({
   localizedSettings: {
-    displayName: `${INVOCATION_NAME_DE} ` + suffix,
+    displayName: `${INVOCATION_NAME_GOOGLE_ASSISTANT_DE} ` + suffix,
     developerName: 'Frank Börncke',
     developerEmail: 'frank.boerncke@applicate.de',
     shortDescription: 'Eine schöne kleine Jovo Template Anwendung von Frank Börncke',
-    fullDescription: 'Eine wirklich schöne kleine Jovo Template Anwendung von Frank Börncke',
+    fullDescription:
+      'Eine wirklich schöne kleine Jovo Template Anwendung von Frank Börncke. Schicke frank.boerncke@gmail.com eine Mail und erzähle ihm, was Du mit diesem Template gemacht hast. ',
     privacyPolicyUrl: 'https://www.applicate.de',
-    pronunciation: `${INVOCATION_NAME_DE} ` + suffix,
+    pronunciation: `${INVOCATION_NAME_GOOGLE_ASSISTANT_DE} ` + suffix,
     smallLogoImage: '$resources.images.logo',
     termsOfServiceUrl: 'https://www.applicate.de',
-    sampleInvocations: ['Sprich mit ' + `${INVOCATION_NAME_DE} ` + suffix],
+    sampleInvocations: ['Sprich mit ' + `${INVOCATION_NAME_ALEXA_DE} ` + suffix],
   },
   // https://developers.google.com/assistant/actionssdk/reference/rest/Shared.Types/Category
   category: 'EDUCATION_AND_REFERENCE',
@@ -54,16 +59,17 @@ let GOOGLE_ASSISTANT_PUBLISHING_INFORMATION_DE = (suffix) => ({
 
 let GOOGLE_ASSISTANT_PUBLISHING_INFORMATION_EN = (suffix) => ({
   localizedSettings: {
-    displayName: `${INVOCATION_NAME_EN} ` + suffix,
+    displayName: `${INVOCATION_NAME_GOOGLE_ASSISTANT_EN} ` + suffix,
     developerName: 'Frank Börncke',
     developerEmail: 'frank.boerncke@applicate.de',
     shortDescription: 'Nice little Jovo Template application from Frank Börncke',
-    fullDescription: 'Very nice little Jovo Template application from Frank Börncke',
+    fullDescription:
+      'Very nice little Jovo Template application from Frank Börncke. Send an email to frank.boernke@gmail.com and tell him what you built using this template. ',
     privacyPolicyUrl: 'https://www.applicate.de',
-    pronunciation: `${INVOCATION_NAME_EN} ` + suffix,
+    pronunciation: `${INVOCATION_NAME_GOOGLE_ASSISTANT_EN} ` + suffix,
     smallLogoImage: '$resources.images.logo',
     termsOfServiceUrl: 'https://www.applicate.de',
-    sampleInvocations: ['Talk to ' + `${INVOCATION_NAME_EN} ` + suffix],
+    sampleInvocations: ['Talk to ' + `${INVOCATION_NAME_ALEXA_EN} ` + suffix],
   },
 });
 
@@ -128,12 +134,13 @@ const project = new ProjectConfig({
 
       languageModel: {
         de: {
-          invocation: INVOCATION_NAME_DE.toLowerCase() + ' test',
+          invocation: INVOCATION_NAME_ALEXA_DE.toLowerCase() + ' test',
         },
         en: {
-          invocation: INVOCATION_NAME_EN.toLowerCase() + ' test',
+          invocation: INVOCATION_NAME_ALEXA_EN.toLowerCase() + ' test',
         },
       },
+
       plugins: [
         // Dev config for Alexa, gets merged into the stageless config
         // @see https://www.jovo.tech/marketplace/platform-alexa/project-config
@@ -229,6 +236,7 @@ const project = new ProjectConfig({
         new GoogleAssistantCli({
           projectId: process.env.GOOGLE_ACTION_PROJECT_ID_DEV,
           resourcesDirectory: 'resources',
+
           // Overrides the settings.yaml to change the Action name
           // @see https://www.jovo.tech/marketplace/platform-alexa/project-config#files
           // @see https://developers.google.com/assistant/actionssdk/reference/rest/Shared.Types/LocalizedSettings
@@ -244,10 +252,10 @@ const project = new ProjectConfig({
     prod: {
       languageModel: {
         de: {
-          invocation: INVOCATION_NAME_DE.toLowerCase(),
+          invocation: INVOCATION_NAME_ALEXA_DE.toLowerCase(),
         },
         en: {
-          invocation: INVOCATION_NAME_EN.toLowerCase(),
+          invocation: INVOCATION_NAME_ALEXA_EN.toLowerCase(),
         },
       },
 

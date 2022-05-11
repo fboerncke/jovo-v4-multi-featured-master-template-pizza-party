@@ -1,7 +1,7 @@
 {
   "invocation": {
-    "alexa": "pizza party",
-    "googleAssistant": "pizza party"
+    "alexa": "define this in file jovo.project.ts",
+    "googleAssistant": "define this in file jovo.project.ts"
   },
   "version": "4.0",
   "intents": {

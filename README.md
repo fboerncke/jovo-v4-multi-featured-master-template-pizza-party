@@ -7,7 +7,9 @@ There are a lot of Jovo examples around but I did not find any project template 
 This Jovo V4 example project includes the following **features**:
 
 - Configuration prepared for stages **PROD** and **DEV**
-  (including **different product and invocation names** for PROD and DEV for **easier testing and maintenance** )
+- Support for **different product names** for PROD and DEV for **easier maintenance**
+- Support for **different invocation names** for PROD and DEV for **easier testing**
+- Support for **different invocation names** for Alexa and Google in case that platform specific certification rules require a different selection
 - Generated code deploys to **Amazon Alexa** and **Google Assistant**
 - Simple **Pizza Party** example shows usage of **Jovo V4 component concept** (reusable YesNoChoiceComponent.ts)
 - Implements **i18n** (currently "de", "en")
