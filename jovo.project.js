@@ -73,6 +73,99 @@ let GOOGLE_ASSISTANT_PUBLISHING_INFORMATION_EN = (suffix) => ({
   },
 });
 
+/**
+ * List of all supportable APL interfaces. This correspondns to the selection in the "Build" => "Interfaces" => "Alexa Presentation Language " area within the Alexa Developer Console
+ * 
+ * Simple remove what you don't need for your usecase.
+ */
+const interfaces = [
+  {
+    supportedViewports: [
+      {
+        maxHeight: 540,
+        maxWidth: 960,
+        minHeight: 540,
+        minWidth: 960,
+        mode: 'TV',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 599,
+        maxWidth: 599,
+        minHeight: 100,
+        minWidth: 100,
+        mode: 'HUB',
+        shape: 'ROUND',
+      },
+      {
+        maxHeight: 959,
+        maxWidth: 1279,
+        minHeight: 600,
+        minWidth: 960,
+        mode: 'HUB',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 1279,
+        maxWidth: 1920,
+        minHeight: 600,
+        minWidth: 1280,
+        mode: 'HUB',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 599,
+        maxWidth: 1279,
+        minHeight: 100,
+        minWidth: 960,
+        mode: 'HUB',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 1279,
+        maxWidth: 2560,
+        minHeight: 960,
+        minWidth: 1920,
+        mode: 'HUB',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 2560,
+        maxWidth: 1279,
+        minHeight: 1920,
+        minWidth: 960,
+        mode: 'HUB',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 1920,
+        maxWidth: 959,
+        minHeight: 320,
+        minWidth: 600,
+        mode: 'MOBILE',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 1920,
+        maxWidth: 1279,
+        minHeight: 320,
+        minWidth: 960,
+        mode: 'MOBILE',
+        shape: 'RECTANGLE',
+      },
+      {
+        maxHeight: 1920,
+        maxWidth: 1920,
+        minHeight: 320,
+        minWidth: 1280,
+        mode: 'MOBILE',
+        shape: 'RECTANGLE',
+      },
+    ],
+    type: 'ALEXA_PRESENTATION_APL',
+  },
+];
+
 /*
 |--------------------------------------------------------------------------
 | JOVO PROJECT CONFIGURATION
@@ -175,22 +268,7 @@ const project = new ProjectConfig({
 
                 apis: {
                   custom: {
-                    interfaces: [
-                      {
-                        type: 'ALEXA_PRESENTATION_APL',
-                        supportedViewports: [
-                          {
-                            mode: 'HUB',
-                            shape: 'RECTANGLE',
-                            minHeight: 600,
-                            maxHeight: 1279,
-                            minWidth: 1280,
-                            maxWidth: 1920,
-                          },
-                          // ...
-                        ],
-                      },
-                    ],
+                    interfaces,
                   },
                 },
                 privacyAndCompliance: {
@@ -293,22 +371,7 @@ const project = new ProjectConfig({
                 },
                 apis: {
                   custom: {
-                    interfaces: [
-                      {
-                        type: 'ALEXA_PRESENTATION_APL',
-                        supportedViewports: [
-                          {
-                            mode: 'HUB',
-                            shape: 'RECTANGLE',
-                            minHeight: 600,
-                            maxHeight: 1279,
-                            minWidth: 1280,
-                            maxWidth: 1920,
-                          },
-                          // ...
-                        ],
-                      },
-                    ],
+                    interfaces,
                   },
                 },
                 privacyAndCompliance: {
