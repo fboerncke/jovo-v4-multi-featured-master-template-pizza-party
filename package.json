@@ -2,7 +2,7 @@
   "name": "jovo-v4-pizza-party-template",
   "private": true,
   "version": "4.0.0",
-  "description": "Get started with multi functional Jovo Framework v4 using this sample TypeScript app.",
+  "description": "Get started with Jovo Framework v4 using this multi functional sample TypeScript app for Alexa & Google Assistant.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
