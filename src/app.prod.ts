@@ -13,7 +13,7 @@ import { app } from './app';
 app.configure({
   plugins: [
     // @see https://www.jovo.tech/marketplace/db-dynamodb
-    new DynamoDb({ table: { name: process.env.DYNAMODB_TABLE_NAME || 'jovo-sample-db' } }),
+    new DynamoDb({ table: { name: process.env.DYNAMODB_TABLE_NAME || 'pizza-party-db' } }),
   ],
 });
 

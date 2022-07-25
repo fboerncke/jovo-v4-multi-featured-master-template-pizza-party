@@ -55,12 +55,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jovotech/jovo-sample-voice-app-nodejs.git"
+    "url": "git+https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party.git"
   },
   "author": "jovotech",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jovotech/jovo-v4-template/issues"
+    "url": "https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/issues"
   },
-  "homepage": "https://github.com/jovotech/jovo-v4-template#readme"
+  "homepage": "https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party#readme"
 }

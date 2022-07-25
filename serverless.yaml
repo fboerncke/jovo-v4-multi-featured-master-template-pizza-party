@@ -1,4 +1,4 @@
-"service": "jovo-sample"
+"service": "pizza-party"
 "frameworkVersion": "3"
 "package":
   "artifact": "./bundle.zip"
@@ -21,7 +21,7 @@
           "Resource": "arn:aws:dynamodb:*:*:table/*"
   "stage": "prod"
   "environment":
-    "DYNAMODB_TABLE_NAME": "jovo-sample-db"
+    "DYNAMODB_TABLE_NAME": "pizza-party-db"
 "functions":
   "handler":
     "handler": "index.handler"

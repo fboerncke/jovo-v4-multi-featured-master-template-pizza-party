@@ -185,7 +185,7 @@ const project = new ProjectConfig({
     // "Stageless" configuration for Serverless
     // @see https://www.jovo.tech/marketplace/target-serverless
     new ServerlessCli({
-      service: 'jovo-sample',
+      service: 'pizza-party',
       provider: {
         runtime: 'nodejs14.x',
         iam: {
@@ -436,7 +436,7 @@ const project = new ProjectConfig({
           provider: {
             stage: 'prod',
             environment: {
-              DYNAMODB_TABLE_NAME: 'jovo-sample-db',
+              DYNAMODB_TABLE_NAME: 'pizza-party-db',
             },
           },
           functions: {
