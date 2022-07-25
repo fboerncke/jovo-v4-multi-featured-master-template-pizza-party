@@ -1,4 +1,4 @@
-# "Pizza Party!" - Yet another Jovo V4 master template supporting a lot of features (V1.20220511)
+# "Pizza Party!" - Yet another Jovo V4 master template supporting a lot of features (V1.20220725)
 
 ## What this is about
 
