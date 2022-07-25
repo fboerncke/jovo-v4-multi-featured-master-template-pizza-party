@@ -4,7 +4,7 @@
 
 There are a lot of Jovo examples around but I did not find any project template that served my use case: this is why I collected pieces and examples on the web, Slack channels, forums, docs and what I learned from personal communication (especially thanks for that!). I used the results to prepare this template project which hopefully serves a lot of users to find their way into Jovo.  
 
-[![Pizza Party Jovo Example Project Template](https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/blob/main/resources/images/pizza-party-01.png "Pizza Party Jovo Example Project Template")](https://raw.githubusercontent.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/main/resources/images/pizza-party-01.png)
+[![Pizza Party Jovo Example Project Template](https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/blob/main/resources/images/pizza-party-01.png "Pizza Party Jovo Example Project Template")](https://www.boerncke.de)
 
 ## Feature list
 
@@ -43,6 +43,4 @@ Let me know what you think.
 
 frank.boerncke@gmail.com
 
-[![Pizza Party Jovo Example Project Template - Good Bye Page](https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/blob/main/resources/images/pizza-party-02.png "Pizza Party Jovo Example Project Template - Good Bye Page")](https://raw.githubusercontent.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/main/resources/images/pizza-party-01.png)
-
-
+[![Pizza Party Jovo Example Project Template - Good Bye Page](https://github.com/fboerncke/jovo-v4-multi-featured-master-template-pizza-party/blob/main/resources/images/pizza-party-02.png "Pizza Party Jovo Example Project Template - Good Bye Page")](https://www.boerncke.de)
