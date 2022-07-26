@@ -1,7 +1,7 @@
 {
   "name": "jovo-v4-multi-featured-master-template-pizza-party",
   "private": true,
-  "version": "4.0.0",
+  "version": "1.0.4",
   "description": "Get started with Jovo Framework v4 using this multi functional sample TypeScript app for Alexa & Google Assistant.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
